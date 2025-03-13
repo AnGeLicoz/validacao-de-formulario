@@ -55,6 +55,7 @@ html {
 }
 
 .input {
+    font-size: 1.5rem;
     text-indent: 1rem;
     line-height: 1.758rem;
     color: #000000;
@@ -64,15 +65,15 @@ html {
     border-radius: 0.5rem;
 }
 .input.mensagem {
+    resize: none;
     min-height: 10rem;
+    font-family: "Roboto", sans-serif;
+    text-indent: 1rem;
+    line-height: 2.758rem;
 }
 .input::placeholder {
-    font-size: 1rem;
     color: #A8A8A8;
     font-weight: 700;
-}
-.input.mensagem::placeholder {
-    font-size: 1.08rem;
 }
 
 .info .aviso {
@@ -81,7 +82,8 @@ html {
     padding-top: 1.8rem;
 }
 
-.enviar {
+.btn-enviar {
+    font-size: 1.5rem;
     background-color: #3CCC87;
     color: white;
     min-width: 30rem;
@@ -90,6 +92,10 @@ html {
     border-radius: 0.5rem;
     margin: 1.2rem 2rem 2rem 2rem;
     cursor: pointer;
+}
+.btn-enviar:hover {
+    background-color: #4ef7a5;
+    transition: 0.1s ease-in;
 }
 
 .preenchido {
@@ -107,7 +113,7 @@ html {
     cursor: default;
 }
 
-.info .ativado {
+.info .mostrar {
     visibility: visible;
     font-weight: 400;
     font-size: 0.8rem;
